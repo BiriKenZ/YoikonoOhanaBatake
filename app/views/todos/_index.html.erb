@@ -1,11 +1,11 @@
 <% todos.each do |todo| %>
-    <div class="todo">
-    <div>
-        <span><%= todo.created_at.strftime("%Y年%m月%d日") %></span>
-        <span class=""><%= todo.title %></span>
-    </div>
-    <div>
-        <span><%= todo.comment %></span>
-    </div>
-    </div>
+    <li class="todo">
+        <p class=""><%= todo.title %></p>
+        <p><%= todo.comment %></p>
+        <p><%= todo.created_at.strftime("%Y年%m月%d日") %></p>
+        <%= link_to todo_path(todo), method: :delete do %>
+          <i class="fas fa-trash-alt"></i>
+        <% end %>
+        <i class="fas fa-edit"></i>
+    </li>
 <% end %>

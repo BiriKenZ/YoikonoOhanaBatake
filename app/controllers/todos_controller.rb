@@ -17,6 +17,12 @@ class TodosController < ApplicationController
     # redirect_to '/todos'
   end
 
+  def destroy
+    todo = Todo.find(params[:id])
+    todo.destroy
+    redirect_to '/todos'
+  end
+
   private
   # ストロングパラメータ
   def todo_params
