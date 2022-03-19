@@ -13,3 +13,79 @@
  *= require_tree .
  *= require_self
  */
+
+
+/* modal window */
+ .modalsearch {
+  position: fixed;
+  background-size: cover;
+  background-repeat: repeat;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+  width: 80vw;
+  height: 70vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+  z-index: 2;
+  display: none;
+}
+
+.modalsearch-contents {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modalsearch-title {
+  height: 20vh;
+  width: auto;
+  color: rgb(0, 0, 0);
+  font-family: 'Permanent Marker', cursive;
+  font-size: 7vw;
+  text-align: center;
+}
+
+.modalsearch-close {
+  cursor: pointer;
+  font-size: 4vw;
+}
+
+.search-label {
+  font-family: "M PLUS Rounded 1c";
+  font-size: 1.2vw;
+}
+
+.search-text {
+  width: 25vw;
+  height: 5vh;
+  color: #000000;
+  border: solid 3px #000000;
+  margin: 0.5em;
+  font-size: 1.2vw;
+  background-color: #ffffff33;
+}
+
+.search-submit {
+  width: 15vw;
+  height: 7vh;
+  color: #000000;
+  border: solid 3px #000000;
+  border-radius: 20%;
+  margin: 0.5em;
+  font-size: 1.2vw;
+  background-color: #ff00004f;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.masksearch {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  display: none;
+}

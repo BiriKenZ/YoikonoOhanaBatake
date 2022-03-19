@@ -14,3 +14,15 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+//= require jquery
+//= require jquery_ujs
+
+// モーダルの表示
+$(function () {
+  $("#btn").on("click", function () {
+    $(".modalsearch,.masksearch").fadeIn();
+  });
+  $(".modalsearch-close,.masksearch").on("click", function () {
+    $(".modalsearch,.masksearch").fadeOut();
+  });
+});

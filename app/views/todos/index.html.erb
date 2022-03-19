@@ -1,2 +1,38 @@
-<h1>Todos#index</h1>
-<p>Find me in app/views/todos/index.html.erb</p>
+<h1>投稿一覧</h1>
+<% @todos.each do |todo| %>
+
+    <div>
+        <p>タイトル</p>
+        <span><%= todo.title %></span>
+    </div>
+    <div>
+        <p>本文</p>
+        <span><%= todo.body %></span>
+    </div>
+
+<% end %>
+
+
+
+<input type="button" id="btn" value='click me'>
+
+<div class="modalsearch">
+    <i class="fa-solid fa-circle-xmark modalsearch-close"></i>
+    <div class="modalsearch-contents">
+      <div class="modalsearch-left">
+        <h2 class="modalsearch-title">Let's<br/>Study !</h2>
+      </div>
+      <div class="modalsearch-right">
+        <div class="modalsearch-contents">
+            <%= form_for(@todo, url: '/todos') do |f| %>
+                <h4>タイトル</h4>
+                <%= f.text_field :title %>
+                <h4>本文</h4>
+                <%= f.text_area :comment %>
+                <%= f.submit '投稿' %>
+            <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="masksearch"></div>
