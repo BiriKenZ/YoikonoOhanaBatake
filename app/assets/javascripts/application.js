@@ -15,4 +15,15 @@
 //= require turbolinks
 //= require_tree .
 //= require jquery
+//= require jquery_ujs
 //= require bootstrap-sprockets
+
+// モーダルの表示
+$(function () {
+  $("#btn").on("click", function () {
+    $(".modalsearch,.masksearch").fadeIn();
+  });
+  $(".modalsearch-close,.masksearch").on("click", function () {
+    $(".modalsearch,.masksearch").fadeOut();
+  });
+});
