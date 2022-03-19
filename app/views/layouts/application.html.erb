@@ -20,11 +20,13 @@
     </div>
   </header>
   <main>
-    # TODO: ログアウトボタンの配置を調整する
+    <%# TODO: ログアウトボタンの配置を調整する %>
     <% if current_user.present? %>
       <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "btn btn-danger" %>
     <% end %>
     <div class="p-5">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
       <%= yield %>
     </div>
   </main>
