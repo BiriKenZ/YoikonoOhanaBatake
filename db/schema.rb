@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_19_014820) do
+ActiveRecord::Schema.define(version: 2022_03_19_040800) do
+
+  create_table "flowers", force: :cascade do |t|
+    t.string "flower_name", default: ""
+    t.string "color_code", default: ""
+    t.string "image_url", default: ""
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "todos", force: :cascade do |t|
     t.string "title", null: false
