@@ -13,3 +13,18 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "variables";
+ @import "bootstrap";
+
+// SP
+@media (max-width: $media-sp-max) {
+}
+
+// PC
+@media (min-width: $media-pc-min) {
+  body {
+    padding: 60px;
+    margin: 0 auto;
+  }
+}
