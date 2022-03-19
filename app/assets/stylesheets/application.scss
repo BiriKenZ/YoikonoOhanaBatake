@@ -19,6 +19,18 @@
 
 body {
   background-color: #bc763c;
+  margin: 0 auto;
+
+  /* headerのcss */
+  img.bg_sky {
+    width: 100%;
+  }
+  img.bg_sun {
+    position: absolute;
+    width: 15vw;
+    top: 30px;
+    right: 60px;
+  }
 }
 
 // SP
