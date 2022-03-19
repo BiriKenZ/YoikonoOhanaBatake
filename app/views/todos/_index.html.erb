@@ -1,0 +1,11 @@
+<% todos.each do |todo| %>
+    <div class="todo">
+    <div>
+        <span><%= todo.created_at.strftime("%Y年%m月%d日") %></span>
+        <span class=""><%= todo.title %></span>
+    </div>
+    <div>
+        <span><%= todo.comment %></span>
+    </div>
+    </div>
+<% end %>
