@@ -16,6 +16,7 @@
 //= require_tree .
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap-sprockets
 
 // モーダルの表示
 $(function () {
