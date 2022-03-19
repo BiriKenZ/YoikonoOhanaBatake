@@ -4,16 +4,121 @@
 
 @import "variables";
 
+/* Todo一覧のCSS */
+.todoIndex {
+  padding: 15px 0 15px 0;
+  background-color: #deb068;
+  width: 80%;
+  margin: auto;
+  /* 飴色 */
+}
+
+.todo {
+  background: white;
+  width: 90%;
+  margin: auto;
+}
+
+.todoIndex > * + * {
+  margin-top: 15px;
+}
+
+/* headerのcss */
+
+/* modal window */
+.modalsearch {
+  position: fixed;
+  background-size: cover;
+  background-repeat: repeat;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+  width: 80vw;
+  height: 55vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  z-index: 2;
+  display: none;
+}
+
+.modalsearch-contents {
+  width: 90%;
+  margin: auto;
+}
+
+.modalsearch-title {
+  height: 20vh;
+  width: auto;
+  color: rgb(0, 0, 0);
+  font-size: 7vw;
+  text-align: center;
+}
+
+.modalsearch-close {
+  cursor: pointer;
+  font-size: 4vw;
+}
+
+.search-label {
+  font-size: 1.2vw;
+}
+
+.search-text {
+  width: 25vw;
+  height: 5vh;
+  color: #000000;
+  border: solid 3px #000000;
+  margin: 0.5em;
+  font-size: 1.2vw;
+  background-color: #ffffff33;
+}
+
+.search-submit {
+  width: 15vw;
+  height: 7vh;
+  color: #000000;
+  border: solid 3px #000000;
+  border-radius: 20%;
+  margin: 0.5em;
+  font-size: 1.2vw;
+  background-color: #ff00004f;
+}
+
+.masksearch {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  display: none;
+}
+
+#todo_title {
+  width: 100%;
+  height: 5vh;
+}
+#todo_comment {
+  width: 100%;
+  height: 10vh;
+}
+
 // SP
 @media (max-width: $media-sp-max) {
   .todos-index {
-
+    form {
+      width: 100%;
+    }
   }
 }
 
 // PC
 @media (min-width: $media-pc-min) {
   .todos-index {
-
+    form {
+      width: 100%;
+    }
   }
 }
