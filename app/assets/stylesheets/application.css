@@ -14,6 +14,43 @@
  *= require_self
  */
 
+/* body全体のcss */
+body{
+  background-color: #bc763c;
+}
+
+/* Todo一覧のCSS */
+.todoIndex{
+  padding: 15px 0 15px 0;
+  background-color: #deb068;
+  width: 80%;
+  margin: auto;
+/* 飴色 */
+}
+
+.todo{
+  background: white;
+  width: 90%;
+  margin: auto;
+  }
+
+.todoIndex > * + *{
+  margin-top: 15px;
+}
+
+ /* headerのcss */
+ img.bg_sky {
+  width: 100%;
+}
+
+img.bg_sun{
+  position: absolute;
+  width: 15vw;
+  top: 30px;
+  right: 60px;
+}
+
+ /* headerのcss */
 
 /* modal window */
  .modalsearch {
@@ -33,16 +70,14 @@
 }
 
 .modalsearch-contents {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  width: 90%;
+  margin: auto;
 }
 
 .modalsearch-title {
   height: 20vh;
   width: auto;
   color: rgb(0, 0, 0);
-  font-family: 'Permanent Marker', cursive;
   font-size: 7vw;
   text-align: center;
 }
@@ -53,7 +88,6 @@
 }
 
 .search-label {
-  font-family: "M PLUS Rounded 1c";
   font-size: 1.2vw;
 }
 
@@ -76,7 +110,6 @@
   margin: 0.5em;
   font-size: 1.2vw;
   background-color: #ff00004f;
-  font-family: 'Permanent Marker', cursive;
 }
 
 .masksearch {
@@ -88,4 +121,17 @@
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 1;
   display: none;
+}
+
+form{
+  width: 100%;
+}
+
+#todo_title{
+  width: 100%;
+  height: 5vh;
+}
+#todo_comment{
+  width: 100%;
+  height: 10vh;
 }
