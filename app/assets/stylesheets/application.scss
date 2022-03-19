@@ -34,21 +34,30 @@ body {
     }
   }
 
-  /* body全体のcss */
-
   /* Todo一覧のCSS */
   .todoIndex {
-    padding: 15px 0 15px 0;
+    padding: 25px 0 25px 0;
     background-color: #deb068;
     width: 80%;
     margin: auto;
     /* 飴色 */
   }
 
+  .btn-success {
+    position: fixed;
+    left: 90%;
+    top: 70%;
+    border-radius: 9999px;
+    font-size: 100px;
+    width: 175px;
+    opacity: 0.8;
+  }
+
   .todo {
     background: white;
     width: 90%;
     margin: auto;
+    padding: 10px 15px 10px 15px;
   }
 
   .todoIndex > * + * {
@@ -65,6 +74,13 @@ body {
     width: 15vw;
     top: 30px;
     right: 60px;
+  }
+
+  img.logo {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 22%;
   }
 
   /* headerのcss */
@@ -89,6 +105,10 @@ body {
   .modalsearch-contents {
     width: 90%;
     margin: auto;
+    padding-top: 30px;
+    .regist_todo {
+      margin-bottom: 30px;
+    }
   }
 
   .modalsearch-title {
@@ -97,36 +117,6 @@ body {
     color: rgb(0, 0, 0);
     font-size: 7vw;
     text-align: center;
-  }
-
-  .modalsearch-close {
-    cursor: pointer;
-    font-size: 4vw;
-  }
-
-  .search-label {
-    font-size: 1.2vw;
-  }
-
-  .search-text {
-    width: 25vw;
-    height: 5vh;
-    color: #000000;
-    border: solid 3px #000000;
-    margin: 0.5em;
-    font-size: 1.2vw;
-    background-color: #ffffff33;
-  }
-
-  .search-submit {
-    width: 15vw;
-    height: 7vh;
-    color: #000000;
-    border: solid 3px #000000;
-    border-radius: 20%;
-    margin: 0.5em;
-    font-size: 1.2vw;
-    background-color: #ff00004f;
   }
 
   .masksearch {
@@ -142,6 +132,9 @@ body {
 
   form {
     width: 100%;
+    .regist_todo_comment {
+      margin-top: 20px;
+    }
   }
 
   #todo_title {
