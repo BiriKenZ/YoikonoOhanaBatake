@@ -5,7 +5,7 @@
       <div class="todo">
         <div>
             <span><%= todo.created_at.strftime("%Y年%m月%d日") %></span>
-            <span><%= todo.title %></span>
+            <span class=""><%= todo.title %></span>
         </div>
         <div>
             <span><%= todo.comment %></span>
@@ -14,20 +14,19 @@
     <% end %>
   </div>
 
-
-  <input type="button" id="btn" value='新規作成'>
+  <input type="button" id="btn" value='＋' class="btn btn-success btn-lg" >
 
   <div class="modalsearch">
       <i class="fa-solid fa-circle-xmark modalsearch-close"></i>
       <div class="modalsearch-contents">
           <div class="modalsearch-contents">
-            <h1>タスクを登録する</h1>
+            <h1 class="regist_todo">タスクを登録する</h1>
               <%= form_for(@todo, url: '/todos') do |f| %>
                   <h4>タイトル</h4>
                   <%= f.text_field :title %>
-                  <h4>内容</h4>
+                  <h4 class="regist_todo_comment">内容</h4>
                   <%= f.text_area :comment %>
-                  <%= f.submit '投稿' %>
+                  <%= f.submit '投稿', class: "btn btn-outline-secondary btn-lg"%>
               <% end %>
           </div>
       </div>
