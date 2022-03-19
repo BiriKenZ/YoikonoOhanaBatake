@@ -7,7 +7,7 @@ class User < ApplicationRecord
   has_many :todos, dependent: :destroy
 
   validates :email, presence: true, length: { maximum: 255 }
-  validates :name, presence: true, length: { maximum: 50 }
+  validates :name, length: { maximum: 50 }
 
   #TODO: nameがからの時、"no name"を表示するようにする""
 
