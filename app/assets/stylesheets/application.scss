@@ -120,6 +120,7 @@ body {
     padding-top: 30px;
     .regist_todo {
       margin-bottom: 30px;
+      font-family: Hiragino Maru Gothic ProN W4;
     }
     .mole {
       width: 12vw;
@@ -160,6 +161,10 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1;
     display: none;
+  }
+
+  h4 {
+    font-family: Hiragino Maru Gothic ProN W4;
   }
 
   form {
