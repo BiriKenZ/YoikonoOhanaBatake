@@ -5,104 +5,147 @@
 @import "variables";
 
 /* Todo一覧のCSS */
-.todoIndex {
-  padding: 15px 0 15px 0;
-  background-color: #deb068;
-  width: 80%;
-  margin: auto;
-  /* 飴色 */
+body {
+  background-color: #bc763c;
+  margin: 0 auto;
+
+  /* headerのcss */
+  img.bg_sky {
+    width: 100%;
+  }
+  img.bg_sun {
+    position: absolute;
+    width: 15vw;
+    top: 30px;
+    right: 60px;
+  }
+  img.logo {
+    width: 50%;
+    position: absolute;
+    top: 8%;
+    left: 22%;
+  }
 }
 
-.todo {
-  background: white;
-  width: 90%;
-  margin: auto;
+// SP
+@media (max-width: $media-sp-max) {
 }
 
-.todoIndex > * + * {
-  margin-top: 15px;
-}
+// PC
+@media (min-width: $media-pc-min) {
+  body {
+    main {
+      padding: 60px;
+      margin: 0 auto;
+    }
+  }
 
-/* headerのcss */
+  /* Todo一覧のCSS */
+  .todoIndex {
+    padding: 25px 0 25px 0;
+    background-color: #deb068;
+    /* 飴色 */
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-/* modal window */
-.modalsearch {
-  position: fixed;
-  background-size: cover;
-  background-repeat: repeat;
-  background-color: rgba(255, 255, 255, 0.8);
-  background-blend-mode: lighten;
-  width: 80vw;
-  height: 55vh;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 10px;
-  z-index: 2;
-  display: none;
-}
+  .todoIndex li {
+    list-style: none;
+    width: 18%;
+    height: auto;
+  }
 
-.modalsearch-contents {
-  width: 90%;
-  margin: auto;
-}
+  .todo {
+    background: white;
+    width: 90%;
+    padding: 10px 15px 10px 15px;
+    font-family: Hiragino Maru Gothic ProN W4;
+  }
 
-.modalsearch-title {
-  height: 20vh;
-  width: auto;
-  color: rgb(0, 0, 0);
-  font-size: 7vw;
-  text-align: center;
-}
+  .todo:nth-child(n + 6) {
+    margin-top: 20px;
+  }
 
-.modalsearch-close {
-  cursor: pointer;
-  font-size: 4vw;
-}
+  /* modal window */
+  .modalsearch {
+    position: fixed;
+    background-size: cover;
+    background-repeat: repeat;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-blend-mode: lighten;
+    width: 80vw;
+    height: 60vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: 2;
+    display: none;
+  }
 
-.search-label {
-  font-size: 1.2vw;
-}
+  .modalsearch-contents {
+    width: 90%;
+    margin: auto;
+    padding-top: 30px;
+    .regist_todo {
+      margin-bottom: 30px;
+      font-family: Hiragino Maru Gothic ProN W4;
+    }
+    .mole {
+      width: 12vw;
+      position: absolute;
+      top: 74%;
+      left: 70%;
+    }
+  }
 
-.search-text {
-  width: 25vw;
-  height: 5vh;
-  color: #000000;
-  border: solid 3px #000000;
-  margin: 0.5em;
-  font-size: 1.2vw;
-  background-color: #ffffff33;
-}
+  .flower {
+    width: 18vh;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+  }
 
-.search-submit {
-  width: 15vw;
-  height: 7vh;
-  color: #000000;
-  border: solid 3px #000000;
-  border-radius: 20%;
-  margin: 0.5em;
-  font-size: 1.2vw;
-  background-color: #ff00004f;
-}
+  .wakaba {
+    width: 10%;
+    position: absolute;
+    left: 25%;
+    bottom: -1%;
+  }
 
-.masksearch {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 1;
-  display: none;
-}
+  .masksearch {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    display: none;
+  }
 
-#todo_title {
-  width: 100%;
-  height: 5vh;
-}
-#todo_comment {
-  width: 100%;
-  height: 10vh;
+  h4 {
+    font-family: Hiragino Maru Gothic ProN W4;
+  }
+
+  form {
+    width: 100%;
+    .regist_todo_comment {
+      margin-top: 20px;
+    }
+  }
+
+  #todo_title {
+    width: 100%;
+    height: 5vh;
+  }
+  #todo_comment {
+    width: 100%;
+    height: 10vh;
+  }
 }
 
 // SP
