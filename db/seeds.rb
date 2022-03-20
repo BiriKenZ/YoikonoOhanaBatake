@@ -24,7 +24,7 @@ Flower.create([
   },
   {
   flower_name: "",
-  color_code: "green  ",
+  color_code: "green",
   image_url: ""
   }
 ])
