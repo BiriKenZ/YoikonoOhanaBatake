@@ -44,22 +44,29 @@ body {
   .todoIndex {
     padding: 25px 0 25px 0;
     background-color: #deb068;
+    /* 飴色 */
     width: 80%;
     margin: auto;
-    /* 飴色 */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .todoIndex li {
+    list-style: none;
+    width: 18%;
+    height: auto;
   }
 
   .todo {
     background: white;
     width: 90%;
-    margin: auto;
     padding: 10px 15px 10px 15px;
     font-family: Hiragino Maru Gothic ProN W4;
   }
 
-  // Todo一覧の上下の間隔を記載
-  .todoIndex > * + * {
-    margin-top: 15px;
+  .todo:nth-child(n + 6) {
+    margin-top: 20px;
   }
 
   /* modal window */
