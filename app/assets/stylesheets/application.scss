@@ -87,4 +87,17 @@ body {
     opacity: 0.8;
   }
   //   モーダルウィンドウ起動のボタン
+
+  // タイル部分
+  .container {
+    padding: 20px;
+    background-color: #542D24;
+    width: 80%;
+    margin-bottom: 50px;
+  }
+
+  .row {
+    background: #f8f9fa;
+    background-color: #542D24;
+  }
 }

@@ -9,22 +9,22 @@
 Flower.create([
   {
   flower_name: "",
-  color_code: "#ff9393",
+  color_code: "red",
   image_url: ""
   },
   {
   flower_name: "",
-  color_code: "#93ffff",
+  color_code: "blue",
   image_url: ""
   },
   {
   flower_name: "",
-  color_code: "#93ff93",
+  color_code: "yellow",
   image_url: ""
   },
   {
   flower_name: "",
-  color_code: "#ffff93",
+  color_code: "green  ",
   image_url: ""
   }
 ])

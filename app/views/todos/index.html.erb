@@ -1,3 +1,11 @@
+<div class="container tile">
+  <div class="row">
+    <% @todos.each do |todo| %>
+      <div class="col"><%= image_tag "#{ todo.flower.color_code }.png", size: '50x50' %></div>
+    <% end %>
+  </div>
+</div>
+
 <div class="todos-index">
 
   <div class="todoIndex">
