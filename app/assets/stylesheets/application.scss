@@ -22,15 +22,21 @@ body {
   margin: 0 auto;
 
   /* headerのcss */
+
+  //   headerの青空の画像
   img.bg_sky {
     width: 100%;
   }
+  //   headerの青空の画像
+
+  //   headerの太陽の画像
   img.bg_sun {
     position: absolute;
     width: 15vw;
     top: 30px;
     right: 60px;
   }
+  //   headerの太陽の画像
 }
 
 // SP
@@ -46,141 +52,15 @@ body {
     }
   }
 
-  /* Todo一覧のCSS */
-  .todoIndex {
-    padding: 25px 0 25px 0;
-    background-color: #deb068;
-    width: 80%;
-    margin: auto;
-    /* 飴色 */
-  }
-
+  // モーダルウィンドウ起動のボタン
   .btn-success {
     position: fixed;
-    left: 88%;
+    left: 87%;
     top: 50%;
     border-radius: 9999px;
-    font-size: 100px;
-    width: 175px;
+    font-size: 90px;
+    width: 150px;
     opacity: 0.8;
   }
-
-  .todo {
-    background: white;
-    width: 90%;
-    margin: auto;
-    padding: 10px 15px 10px 15px;
-    font-family: Hiragino Maru Gothic ProN W4;
-  }
-
-  .todoIndex > * + * {
-    margin-top: 15px;
-  }
-
-  /* headerのcss */
-  img.bg_sky {
-    width: 100%;
-  }
-
-  img.bg_sun {
-    position: absolute;
-    width: 15vw;
-    top: 30px;
-    right: 60px;
-  }
-
-  img.logo {
-    width: 50%;
-    position: absolute;
-    top: 8%;
-    left: 22%;
-  }
-
-  /* headerのcss */
-
-  /* modal window */
-  .modalsearch {
-    position: fixed;
-    background-size: cover;
-    background-repeat: repeat;
-    background-color: rgba(255, 255, 255, 0.8);
-    background-blend-mode: lighten;
-    width: 80vw;
-    height: 55vh;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-    z-index: 2;
-    display: none;
-  }
-
-  .modalsearch-contents {
-    width: 90%;
-    margin: auto;
-    padding-top: 30px;
-    .regist_todo {
-      margin-bottom: 30px;
-      font-family: Hiragino Maru Gothic ProN W4;
-    }
-    .mole {
-      width: 12vw;
-      position: absolute;
-      top: 69%;
-      left: 70%;
-    }
-  }
-
-  .flower {
-    width: 18vh;
-    position: absolute;
-    top: 80%;
-    left: 3%;
-  }
-
-  .wakaba {
-    width: 10%;
-    position: absolute;
-    left: 25%;
-    bottom: -1%;
-  }
-
-  .modalsearch-title {
-    height: 20vh;
-    width: auto;
-    color: rgb(0, 0, 0);
-    font-size: 7vw;
-    text-align: center;
-  }
-
-  .masksearch {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1;
-    display: none;
-  }
-
-  h4 {
-    font-family: Hiragino Maru Gothic ProN W4;
-  }
-
-  form {
-    width: 100%;
-    .regist_todo_comment {
-      margin-top: 20px;
-    }
-  }
-
-  #todo_title {
-    width: 100%;
-    height: 5vh;
-  }
-  #todo_comment {
-    width: 100%;
-    height: 10vh;
-  }
+  //   モーダルウィンドウ起動のボタン
 }
