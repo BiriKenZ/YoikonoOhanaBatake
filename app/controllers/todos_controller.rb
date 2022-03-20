@@ -12,7 +12,7 @@ class TodosController < ApplicationController
   def create
     todo = Todo.new(todo_params)
     todo.user_id = current_user.id
-    todo.flower_id = 8
+    todo.flower_id = rand(Flower.count)
     todo.save
     # redirect_to '/todos'
   end
